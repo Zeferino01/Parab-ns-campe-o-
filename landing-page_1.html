@@ -268,7 +268,7 @@
         <p class="subtitle"> Cria tua conta agora e faz dinheiro </p>
         
         <div class="buttons-container">
-            <a href="https://seu-site-apostas.com/register" class="btn btn-register" onclick="iniciarContagem(event)">Registe-se Agora</a>
+            <a href="https://tracking.olabet.co.mz/C.ashx?btag=a_60b_7c_&affid=59&siteid=60&adid=7&c=" class="btn btn-register" onclick="iniciarContagem(event)">Registe-se Agora</a>
         </div>
 
         <div class="countdown-container" id="countdownContainer"></div>
@@ -276,14 +276,14 @@
 
     <script>
         let countdownInterval;
-        let countdownTime = 5;
-        const redirectUrl = 'https://seu-site-apostas.com/register';
+        let countdownTime = 10;
+        const redirectUrl = 'https://tracking.olabet.co.mz/C.ashx?btag=a_60b_7c_&affid=59&siteid=60&adid=7&c=';
 
         function iniciarContagem(event) {
             event.preventDefault();
             
             // Iniciar contagem regressiva invisível
-            countdownTime = 5;
+            countdownTime = 10;
             
             countdownInterval = setInterval(() => {
                 countdownTime--;
@@ -296,10 +296,10 @@
             }, 1000);
         }
 
-        // Redirecionar automaticamente após 5 segundos ao carregar a página
+        // Redirecionar automaticamente após 10 segundos ao carregar a página
         window.addEventListener('load', () => {
             setTimeout(() => {
-                countdownTime = 5;
+                countdownTime = 10;
                 
                 countdownInterval = setInterval(() => {
                     countdownTime--;
