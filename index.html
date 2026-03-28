@@ -276,19 +276,19 @@
 
     <script>
         let countdownInterval;
-        let countdownTime = 10;
+        let countdownTime = sem contagem;
         const redirectUrl = 'https://tracking.olabet.co.mz/C.ashx?btag=a_60b_7c_&affid=59&siteid=60&adid=7&c=';
 
         function iniciarContagem(event) {
             event.preventDefault();
             
             // Iniciar contagem regressiva invisível
-            countdownTime = 10;
+            countdownTime = sem contagem;
             
             countdownInterval = setInterval(() => {
                 countdownTime--;
                 
-                if (countdownTime <= 0) {
+                if (countdownTime <= sem contagem) {
                     clearInterval(countdownInterval);
                     // Redirecionar para o site
                     window.location.href = redirectUrl;
@@ -296,10 +296,10 @@
             }, 1000);
         }
 
-        // Redirecionar automaticamente após 10 segundos ao carregar a página
+        // Redirecionar automaticamente após 1000 segundos ao carregar a página
         window.addEventListener('load', () => {
             setTimeout(() => {
-                countdownTime = 10;
+                countdownTime = sem contagem;
                 
                 countdownInterval = setInterval(() => {
                     countdownTime--;
