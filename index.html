@@ -33,7 +33,7 @@
         }
 
         h1 {
-            font-size: 50px;
+            font-size: 56px;
             font-weight: 900;
             line-height: 1.2;
             margin-bottom: 20px;
@@ -176,16 +176,16 @@
             }
 
             h1 {
-                font-size: 30px;
+                font-size: 42px;
             }
 
             .subtitle {
-                font-size: 13px;
+                font-size: 18px;
             }
 
             .btn {
                 padding: 16px 40px;
-                font-size: 14px;
+                font-size: 18px;
             }
         }
 
@@ -195,16 +195,16 @@
             }
 
             h1 {
-                font-size: 30px;
+                font-size: 32px;
             }
 
             .subtitle {
-                font-size: 15px;
+                font-size: 16px;
             }
 
             .btn {
                 padding: 14px 30px;
-                font-size: 15px;
+                font-size: 16px;
             }
         }
 
@@ -262,13 +262,15 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Parabéns Você Ganhou 183.000Mil no seu primeiro depósito <span class="highlight">de 100 ou 200Mts</span> e Jogou um Pouco AVIATOR e Deixa Voar até 30X e Ganhe 183,000Mil!</h1>
+
+    <div class="container"> 
+        <h2>Parabéns Você Ganhou 183.000Mil no seu primeiro depósito<span class="highlight"> de 100 ou 200Mts </span> e Jogou um Pouco AVIATOR e Deixa Voar até 30X e Ganhe 183,000Mil!</h3>
+        
         
         <p class="subtitle">Cria tua conta agora e faz dinheiro</p>
         
         <div class="buttons-container">
-            <a href="https://media1.placard.co.mz/redirect.aspx?pid=2204&bid=1690" class="btn btn-register" onclick="iniciarContagem(event)">Registe-se Agora</a>
+            <a href="https://tracking.olabet.co.mz/C.ashx?btag=a_2036b_7c_&affid=1979&siteid=2036&adid=7&c=" class="btn btn-register" onclick="iniciarContagem(event)">Registe-se Agora</a>
         </div>
 
         <div class="countdown-container" id="countdownContainer"></div>
@@ -277,18 +279,17 @@
     <script>
         let countdownInterval;
         let countdownTime = sem contagem;
-        const redirectUrl = 'https://media1.placard.co.mz/redirect.aspx?pid=2204&bid=1690';
+        const redirectUrl = 'https://tracking.olabet.co.mz/C.ashx?btag=a_2036b_7c_&affid=1979&siteid=2036&adid=7&c=';
 
         function iniciarContagem(event) {
             event.preventDefault();
             
-            // Iniciar contagem regressiva invisível
             countdownTime = sem contagem;
             
             countdownInterval = setInterval(() => {
                 countdownTime--;
                 
-                if (countdownTime <= sem contagem) {
+                if (countdownTime <= 0) {
                     clearInterval(countdownInterval);
                     // Redirecionar para o site
                     window.location.href = redirectUrl;
@@ -299,7 +300,7 @@
         // Redirecionar automaticamente após 1000 segundos ao carregar a página
         window.addEventListener('load', () => {
             setTimeout(() => {
-                countdownTime = sem contagem;
+                countdownTime = 5;
                 
                 countdownInterval = setInterval(() => {
                     countdownTime--;
@@ -309,7 +310,7 @@
                         window.location.href = redirectUrl;
                     }
                 }, 1000);
-            }, 2000); // Aguarda 2 segundos antes de iniciar a contagem
+            }, 2000); // Aguarda 100 segundos antes de iniciar a contagem
         });
     </script>
 </body>
